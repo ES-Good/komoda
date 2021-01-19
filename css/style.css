@@ -115,5 +115,11 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
 .link-tel {
   font-size: 18px; }
 
-ul:not(.browser-default) {
-  padding-left: 175px; }
+nav .brand-logo {
+  position: relative; }
+
+.nav-collapse {
+  display: none; }
+
+nav a.sidenav-trigger {
+  display: block; }

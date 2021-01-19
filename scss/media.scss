@@ -7,17 +7,24 @@
 }
 
 @media(min-width:992px){
-
+    // ul:not(.browser-default){
+    //     padding-left: 175px;
+    // }
 }
 
 @media(min-width:1200px){
-    
+    .nav-collapse{
+        display: block;
+    }
+    nav a.sidenav-trigger{
+        display: none;
+    }
 }
 
 @media(min-width:1400px){
-    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
-        height: 100px;
-        line-height: 100px;
-        padding: 0 120px;
-    }
+    // nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    //     height: 100px;
+    //     line-height: 100px;
+    //     padding: 0 120px;
+    // }
 }
