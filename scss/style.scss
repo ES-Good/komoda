@@ -84,14 +84,87 @@
     font-style: normal;
 }
 
+$green: #12A89D;
+
 body{
     background-color: #FAFAFA;
+    color: #3D3D3D;
+    font-size: 24px;
 }
 
-p{
-    font-family: 'Proxima Nova Lt';
+.color-green{
+    color: $green;
+}
+
+.bg-green{
+    background-color: $green;
+}
+
+.title{
+    font-family: 'Museo Cyrl 700';
+
+    &_big{
+        font-size: 64px;
+    }
+
+    &_medium{
+        font-size: 48px;
+    }
+
+    &_subtitle{
+        font-size: 36px;
+    }
+}
+
+.btn{
+    width: 340px;
+    padding: 15px 0;
+    border: none;
+    text-align: center;
+    height: auto;
+    font-size: 24px;
+    text-transform: none;
+    font-family: 'Montserrat';
+
+    &_green{
+        background-color: $green;
+        color: #fff;
+
+        &_fz-small{
+            font-size: 18px;
+        }
+    }
+}
+
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 30px;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    li{
+        a{
+            font-family: 'Proxima Nova Rg';
+            color: #000;
+            font-size: 18px;
+        }
+    }
+}
+
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
+    font-size: 34px;
+}
+
+.link-tel{
     font-size: 18px;
-    color: #000;
-    font-style: normal !important;
-    width: 50%;
+}
+
+ul:not(.browser-default){
+    padding-left: 175px;
 }
