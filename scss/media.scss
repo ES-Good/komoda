@@ -7,24 +7,31 @@
 }
 
 @media(min-width:992px){
-    // ul:not(.browser-default){
-    //     padding-left: 175px;
-    // }
+    .nav-collapse{
+        margin-left: 0;
+    }
 }
 
 @media(min-width:1200px){
     .nav-collapse{
         display: block;
+        order: 2;
     }
     nav a.sidenav-trigger{
         display: none;
     }
+    .brand-logo{
+        order: 1;
+    }
+    .nav-wrapper{
+        display: flex;
+    }
 }
 
 @media(min-width:1400px){
-    // nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
-    //     height: 100px;
-    //     line-height: 100px;
-    //     padding: 0 120px;
-    // }
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+        height: 100px;
+        line-height: 100px;
+        padding: 0 120px;
+    }
 }

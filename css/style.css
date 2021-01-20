@@ -65,7 +65,7 @@ body {
   color: #3D3D3D;
   font-size: 24px; }
 
-.color-green {
+.text-green {
   color: #12A89D; }
 
 .bg-green {
@@ -101,8 +101,8 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
   padding: 0 30px; }
 
 .nav-wrapper {
-  display: flex;
-  justify-content: space-between; }
+  display: block;
+  justify-content: flex-start; }
 
 nav li a {
   font-family: 'Proxima Nova Rg';
@@ -113,13 +113,64 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
   font-size: 34px; }
 
 .link-tel {
-  font-size: 18px; }
+  position: absolute;
+  font-size: 18px;
+  order: 3;
+  right: 0; }
 
 nav .brand-logo {
-  position: relative; }
+  position: relative;
+  order: 1; }
 
 .nav-collapse {
-  display: none; }
+  display: none;
+  align-self: flex-start;
+  margin-left: 5%; }
 
 nav a.sidenav-trigger {
   display: block; }
+
+.toggle {
+  order: 2; }
+
+form {
+  max-width: 340px; }
+  form .btn {
+    margin-top: 80px; }
+
+.container-center {
+  max-width: 1500px;
+  margin: 0 auto; }
+  .container-center_big {
+    max-width: 1920px;
+    margin: 0 auto; }
+
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .top-section__img {
+    width: 800px; }
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10vw;
+  margin-top: 190px; }
+  .about p {
+    font-size: 18px; }
+  .about div {
+    margin-right: 120px; }
+
+.advantage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1vw; }
+  .advantage P {
+    text-align: center; }
+  .advantage div {
+    display: flex;
+    flex-direction: column; }
+  .advantage .title {
+    grid-column: 1/7;
+    text-align: center; }

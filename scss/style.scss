@@ -92,7 +92,7 @@ body{
     font-size: 24px;
 }
 
-.color-green{
+.text-green{
     color: $green;
 }
 
@@ -142,8 +142,8 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     padding: 0 30px;
 }
 .nav-wrapper{
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    justify-content: flex-start;
 }
 
 nav{
@@ -162,17 +162,90 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
 }
 
 .link-tel{
+    position: absolute;
     font-size: 18px;
+    order: 3;
+    right: 0;
 }
 
 nav .brand-logo{
     position: relative;
+    order: 1;
 }
 
 .nav-collapse{
     display: none;
+    align-self: flex-start;
+    margin-left: 5%;
 }
 
 nav a.sidenav-trigger{
     display: block;
+}
+
+.toggle{
+    order: 2;
+}
+
+form{
+    max-width: 340px;
+    
+    .btn{
+        margin-top: 80px;
+    }
+}
+
+.container-center{
+    max-width: 1500px;
+    margin: 0 auto;
+
+    &_big{
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+.top-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+    &__img{
+        width: 800px;
+    }
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10vw;
+    margin-top: 190px;
+
+    p{
+        font-size: 18px;
+    }
+
+    div{
+        margin-right: 120px;
+    }
+}
+
+.advantage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1vw;
+
+    P{
+        text-align: center;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title{
+        grid-column: 1/7;
+        text-align: center;
+    }
 }
