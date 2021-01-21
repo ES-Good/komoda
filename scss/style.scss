@@ -96,6 +96,10 @@ body{
     color: $green;
 }
 
+.text-white{
+    color: #fff;
+}
+
 .bg-green{
     background-color: $green;
 }
@@ -212,6 +216,16 @@ form{
     &__img{
         width: 800px;
     }
+
+    &__square{
+        width: 45%;
+        height: 100%;
+        background-color: $green;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
 }
 
 .about{
@@ -227,13 +241,19 @@ form{
     div{
         margin-right: 120px;
     }
+
+    img{
+        max-width: 960px;
+        width: 100%;
+    }
 }
 
 .advantage{
+    margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2vw;
 
     P{
         text-align: center;
@@ -242,10 +262,104 @@ form{
     div{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 250px;
+
+        img{
+            max-width: 60px;
+            max-height: 60px;
+        }
+
+        p{
+            position: absolute;
+            top: 65px;
+        }
     }
 
     .title{
         grid-column: 1/7;
         text-align: center;
+    }
+}
+
+.we-can{
+    margin-top: 6vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1vw;
+
+    &__main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 50px;
+
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    &__left-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .title{
+            margin-bottom: 4vw;
+        }
+
+        img{
+            max-width: 490px;
+            width: 100%;
+        }
+    }
+
+    &__border-bot{
+        border-bottom: 1px solid #D2D2D2;
+        border-right: 1px solid #D2D2D2;
+    }
+    &__border-bot:nth-child(4n){
+        border-right: none;
+    }
+
+    &__border-right{
+        border-right: 1px solid #D2D2D2;
+    }
+
+    &__border-right:nth-child(4n){
+        border-right: none;
+    }
+}
+
+.quiz-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr;
+
+    &__main{
+        border: 1px solid #D2D2D2;
+        background-color: #fff;
+        border-radius: 15px;
+        height: 350px;
+        grid-column: 2/9;
+    }
+
+    &__desktop-column{
+        grid-column: 9/12;
+        position: relative;
+
+        img{
+            max-width: 690px;
+            width: 100%;
+        }
     }
 }
