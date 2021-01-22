@@ -100,6 +100,10 @@ body{
     color: #fff;
 }
 
+.text-grey{
+    color: #A4A4A4;
+}
+
 .bg-green{
     background-color: $green;
 }
@@ -343,23 +347,101 @@ form{
 
 .quiz-block{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr;
+    grid-template-columns: 0.3fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr;
 
     &__main{
         border: 1px solid #D2D2D2;
         background-color: #fff;
         border-radius: 15px;
-        height: 350px;
-        grid-column: 2/9;
+        grid-column: 2/10;
+        padding: 80px 0 80px 100px;
+
+        .quiz-block__main__inner{
+            display: flex;
+        }
+
+        .quiz-block__box:not(last-child){
+            margin-right: 25px;
+        }
+
+        .quiz-block__box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #D2D2D2;
+            padding: 20px 0;
+            border-radius: 20px;
+
+            &__text-red{
+                color: #DD232E;
+                font-size: 48px !important;
+                font-family: 'Museo Cyrl 700';
+                line-height: 30px;
+
+                span{
+                    font-size: 30px;
+                }
+
+            }
+
+            p{
+                text-align: center;
+                font-family: 'Museo Cyrl 700';
+                font-size: 18px;
+            }
+        }
+
+        &__link-quiz-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            max-width: 620px;
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        .link-quiz{
+            background-color: $green;
+            color: #fff;
+            max-width: 340px;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            transition: border .2s, color.5s, background-color .5s,font-size .5s;
+
+            &:hover{
+                background-color: transparent;
+                color: $green;
+                border: 2px solid $green;
+                font-size: 20px;
+            }
+        }
     }
 
     &__desktop-column{
-        grid-column: 9/12;
+        grid-column: 10/12;
         position: relative;
 
         img{
-            max-width: 690px;
+            max-width: 620px;
             width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-25%, -50%);
+        }
+        &__green-container{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: #12A89D;
+            height: 95%;
+            width: 210%;
         }
     }
 }
