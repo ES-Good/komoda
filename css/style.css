@@ -100,6 +100,12 @@ body {
     color: #fff; }
     .btn_green_fz-small {
       font-size: 18px; }
+  .btn_withe {
+    background-color: #fff;
+    color: #3D3D3D;
+    transition: color .3s; }
+    .btn_withe:hover {
+      color: #fff; }
 
 nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
   height: 100px;
@@ -313,3 +319,87 @@ form {
       background-color: #12A89D;
       height: 95%;
       width: 210%; }
+
+.order {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 2vw; }
+  .order .title {
+    grid-column: 1/7;
+    text-align: center; }
+  .order div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 250px; }
+    .order div img {
+      max-width: 60px;
+      max-height: 60px; }
+    .order div p {
+      position: absolute;
+      top: 65px;
+      text-align: center; }
+  .order__step {
+    font-family: 'Proxima Nova Th';
+    font-size: 36px;
+    font-weight: 800;
+    color: #D8D8D8;
+    top: 50% !important; }
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 7vw;
+  padding: 35px 0;
+  position: relative; }
+  .catalog img {
+    max-width: 510px;
+    width: 100%; }
+  .catalog__discription {
+    grid-column: 2/6; }
+  .catalog__form {
+    min-width: 320px;
+    width: 100%; }
+    .catalog__form input {
+      border: 1px solid #fff !important;
+      padding-left: 15px !important;
+      margin-top: 25px !important; }
+    .catalog__form .btn {
+      margin-top: 15px; }
+  .catalog .container-form {
+    grid-column: 6/8; }
+  .catalog img {
+    grid-column: 9/13;
+    position: absolute;
+    transform: translateY(-10%); }
+  .catalog .title {
+    margin: 0; }
+
+svg path {
+  fill: #fff;
+  stroke: inherit;
+  stroke-width: inherit; }
+
+.messengers-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 230px; }
+  .messengers-container p {
+    font-size: 16px; }
+
+.link-messanger {
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px; }
+  .link-messanger:hover {
+    background-color: #fff; }
+  .link-messanger:hover .massenger path {
+    fill: #12A89D; }
