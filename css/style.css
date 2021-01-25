@@ -74,6 +74,12 @@ body {
 .text-grey {
   color: #A4A4A4; }
 
+.text-black {
+  color: #000; }
+
+.text-center {
+  text-align: center; }
+
 .bg-green {
   background-color: #12A89D; }
 
@@ -354,7 +360,7 @@ form {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 7vw;
-  padding: 35px 0;
+  padding: 60px 0;
   position: relative; }
   .catalog img {
     max-width: 510px;
@@ -403,3 +409,34 @@ svg path {
     background-color: #fff; }
   .link-messanger:hover .massenger path {
     fill: #12A89D; }
+
+.certificates {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  .certificates__img {
+    max-width: 240px;
+    width: 100%; }
+  .certificates__link {
+    margin: 0 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform .5s, box-shadow .5s; }
+    .certificates__link:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.contact-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .contact-block div:not(:last-child) {
+    border-right: 1px solid #A4A4A4; }
+
+.footer__nav {
+  grid-column: 2/6; }
+  .footer__nav li {
+    display: inline-block;
+    margin-right: 15px; }
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); }
